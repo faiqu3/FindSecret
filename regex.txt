@@ -1,0 +1,25 @@
+ghp_.*
+github_pat_.*
+gh[us]_.*
+gho_.*
+ghr_.*
+amzn\\.mws\\.*
+arn:aws:sns:.*
+ya29\.*
+accessKeyId.*
+secretAccessKey.*
+Ocp-Apim-Subscription-Key.*
+access_token:.*
+https:\/\/discordapp.\.com\/api\/webhooks\/.*
+https:\/\/outlook\.office\.com\/webhook\/.*
+rzp_(live|test)_.*
+https:\/\/hooks\.slack\.com\/services\/.*
+BEGIN OPENSSH PRIVATE KEY.*
+BEGIN PRIVATE KEY.*
+BEGIN RSA PRIVATE KEY.*
+BEGIN DSA PRIVATE KEY.*
+BEGIN EC PRIVATE KEY.*
+BEGIN PGP PRIVATE KEY BLOCK.*
+ssh-rsa.*
+ssh-dsa.8
+ssh-ed25519.*
