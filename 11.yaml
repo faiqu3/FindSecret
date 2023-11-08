@@ -1,0 +1,18 @@
+id: amazon
+
+info:
+  name: amazon
+  author: Faique
+  severity: CRITICAL
+  tags: token,file,github
+
+
+requests:
+  - method: GET
+    path:
+      - "{{BaseURL}}"
+
+    extractors:
+      - type: regex
+        regex:
+          - "amzn\\.mws\\.[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}"

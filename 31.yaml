@@ -1,0 +1,18 @@
+id: slackwebhook
+
+info:
+  name: js-secret
+  author: Faique
+  severity: CRITICAL
+  tags: token,file,github
+
+
+requests:
+  - method: GET
+    path:
+      - "{{BaseURL}}"
+
+    extractors:
+      - type: regex
+        regex:
+          - https:\/\/hooks.slack.com\/services\/T[0-9A-Za-z\\-_]{10}\/B[0-9A-Za-z\\-_]{10}\/[0-9A-Za-z\\-_]{24}

@@ -1,0 +1,18 @@
+id: stackhawk
+
+info:
+  name: js-secret
+  author: Faique
+  severity: CRITICAL
+  tags: token,file,github
+
+
+requests:
+  - method: GET
+    path:
+      - "{{BaseURL}}"
+
+    extractors:
+      - type: regex
+        regex:
+          - "hawk\\.[0-9A-Za-z\\-_]{20}\\.[0-9A-Za-z\\-_]{20}"

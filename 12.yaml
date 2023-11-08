@@ -1,0 +1,18 @@
+id: amazon
+
+info:
+  name: amazon
+  author: Faique
+  severity: CRITICAL
+  tags: token,file,github
+
+
+requests:
+  - method: GET
+    path:
+      - "{{BaseURL}}"
+
+    extractors:
+      - type: regex
+        regex:
+          - '(?i)(?:aws.?session|aws.?session.?token|aws.?token)["''`]?\s{0,30}(?::|=>|=)\s{0,30}["''`]?([a-z0-9/+=]{16,200})[^a-z0-9/+=]'

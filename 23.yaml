@@ -1,0 +1,18 @@
+id: google
+
+info:
+  name: js-secret
+  author: Faique
+  severity: CRITICAL
+  tags: token,file,github
+
+
+requests:
+  - method: GET
+    path:
+      - "{{BaseURL}}"
+
+    extractors:
+      - type: regex
+        regex:
+          - '(GOCSPX-[a-zA-Z0-9_-]{28})'
