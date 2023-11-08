@@ -1,0 +1,18 @@
+id: github
+
+info:
+  name: github
+  author: Faique
+  severity: high
+  tags: token,file,cloudinary
+
+
+requests:
+  - method: GET
+    path:
+      - "{{BaseURL}}"
+
+    extractors:
+      - type: regex
+        regex:
+          - 'github_pat_.{82}'
